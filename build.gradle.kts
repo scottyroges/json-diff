@@ -8,7 +8,7 @@ plugins {
 
 fun resolveVersion(version: String): String = System.getenv("SNAPSHOT")?.ifBlank { version } ?: version
 
-version = resolveVersion("1.0.0")
+version = resolveVersion("1.0.1")
 group = "om.github.scottyroges"
 
 val junitVersion: String by project

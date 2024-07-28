@@ -68,5 +68,8 @@ dependencies {
 
 ## CHANGELOG
 
+### 1.0.1
+- Getting setup with jitpack
+
 ### 1.0.0
 - Initial library setup
