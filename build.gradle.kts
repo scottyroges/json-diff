@@ -8,8 +8,8 @@ plugins {
 
 fun resolveVersion(version: String): String = System.getenv("SNAPSHOT")?.ifBlank { version } ?: version
 
-version = resolveVersion("1.0.1")
-group = "om.github.scottyroges"
+version = resolveVersion("1.0.2")
+group = "com.github.scottyroges"
 
 val junitVersion: String by project
 val kotlinLoggingVersion: String by project
