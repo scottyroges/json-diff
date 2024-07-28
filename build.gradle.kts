@@ -8,7 +8,7 @@ plugins {
 
 fun resolveVersion(version: String): String = System.getenv("SNAPSHOT")?.ifBlank { version } ?: version
 
-version = resolveVersion("1.0.2")
+version = resolveVersion("1.0.3")
 group = "com.github.scottyroges"
 
 val junitVersion: String by project
@@ -84,5 +84,17 @@ configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
     }
     filter {
         exclude("**/generated/**")
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.scottyroges"
+            artifactId = "json-diff"
+            version = "1.0.3"
+
+            from(components["kotlin"])
+        }
     }
 }

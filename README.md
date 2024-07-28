@@ -67,6 +67,9 @@ dependencies {
 ```
 
 ## CHANGELOG
+### 1.0.3
+- jitpack
+
 ### 1.0.2
 - fix
 
