@@ -9,7 +9,7 @@ plugins {
 fun resolveVersion(version: String): String = System.getenv("SNAPSHOT")?.ifBlank { version } ?: version
 
 version = resolveVersion("1.0.0")
-group = "com.scottyroges"
+group = "om.github.scottyroges"
 
 val junitVersion: String by project
 val kotlinLoggingVersion: String by project
