@@ -1,4 +1,5 @@
 # Json Diff
+[![](https://jitpack.io/v/scottyroges/json-diff.svg)](https://jitpack.io/#scottyroges/json-diff)
 
 Provides a library to diff two json objects
 
