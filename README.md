@@ -61,8 +61,13 @@ println(diffs)
 ### Gradle
 
 ```kotlin
+repositories {
+    mavenCentral()
+    maven {  url = uri("https://jitpack.io") }
+}
+
 dependencies {
-    implementation("com.scottyroges:json-diff:$version")
+    implementation("com.github.scottyroges:json-diff:$version")
     // other deps here
 }
 ```
