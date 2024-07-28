@@ -1,0 +1,15 @@
+**/bin/
+**/out/
+.idea/
+*.class
+*.iml
+*.bak
+.gradle/
+.DS_Store
+**/build/
+**/skaffold-k8s.yaml
+**/dev.yaml
+node_modules/
+**/package-lock.json
+shouldBypassTestFailures
+.vscode
